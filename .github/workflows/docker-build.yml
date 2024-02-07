@@ -3,7 +3,7 @@ name: Docker Build and Push
 on:
   push:
     branches:
-      - estimation-github-alar12-240131
+      - estimation-RohitReddyy-240129 
 
 jobs:
   build:
@@ -13,21 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
       - name: Set up Docker
         run: docker --version
 
       - name: Build Docker image
         run: |
           cd crew_manual
-          docker build -t alar12/my-app .
+          docker build -t rohitreddyy/my-astro-app .
 
       - name: Log in to Docker Hub
-        run: docker login -u alar12 -p Aa12345*#
+        run: docker login -u rohitreddyy -p Rohit@123
 
       - name: Push Docker image
-        run: docker push alar12/my-app
+        run: docker push rohitreddyy/my-astro-app
+      
