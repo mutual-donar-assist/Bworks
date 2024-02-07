@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: npm install # Assuming you're using npm for JavaScript projects, adjust this command if using a different package manager or language
+        
+      - name: Code linting
+        run: npm run lint # Adjust this command based on your linting setup
+
       - name: Set up Docker
         run: docker --version
 
@@ -29,4 +35,3 @@ jobs:
       
       - name: Run Docker container
         run: docker run -d -p 4321:3000 vineeth173/my-astro-app
-      
