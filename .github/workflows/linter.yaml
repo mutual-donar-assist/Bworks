@@ -1,4 +1,4 @@
-name: Lint Code Base
+name: Linter
 
 on:
     push:
@@ -6,8 +6,8 @@ on:
         - Rohit
 
 jobs:
-  build:
-    name: Lint Code Base
+  lint:
+    name: Linter
     runs-on: ubuntu-latest
 
     steps:
