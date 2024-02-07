@@ -23,7 +23,7 @@ module.exports = {
         }
     ],
     "parserOptions": {
-        project: resolve(__dirname, './tsconfig.json'),
+        project: './tsconfig.json',
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
