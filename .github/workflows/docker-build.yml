@@ -37,6 +37,7 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+        working-directory: ./crew_manual
       
       - name: Run ESLint
         run: npx eslint .
