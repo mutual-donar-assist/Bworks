@@ -6,7 +6,6 @@
   },
   "include": [
     "src/**/*.ts",
-    "Bworks/.eslintrc.js",
     ".eslintrc.js"
   ]
 }
