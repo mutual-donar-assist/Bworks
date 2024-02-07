@@ -1,4 +1,4 @@
-name: CI/CD
+name: Code Linting
 
 on:
   pull_request:
