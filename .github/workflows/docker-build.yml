@@ -1,5 +1,5 @@
-name: Docker Build and Push
-#docker
+name: CI/CD Pipeline
+
 on:
   push:
     branches:
@@ -31,3 +31,9 @@ jobs:
 
       - name: Push Docker image
         run: docker push alar12/my-app
+
+      - name: Run linter
+        run: npm run lint
+      
+      - name: Run ESLint
+        run: npx eslint .
