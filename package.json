@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "eslint": "^8.56.0",
-    "esbuild": "^0.20.0"
+    "esbuild": "^0.20.0",
+    "@astrojs/check": "^0.4.1",
+    "astro": "^4.1.2",
+    "typescript": "^5.3.3"
   },
   "scripts": {
     "lint": "eslint ."

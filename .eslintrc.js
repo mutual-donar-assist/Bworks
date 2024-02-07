@@ -16,11 +16,13 @@ module.exports = {
                 ".eslintrc.{js,cjs}"
             ],
             "parserOptions": {
+                "project": 'Bworks/tsconfig.json',
                 "sourceType": "script"
             }
         }
     ],
     "parserOptions": {
+        "project": 'Bworks/tsconfig.json',
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
