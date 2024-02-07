@@ -27,7 +27,7 @@ jobs:
           docker build -t alar12/my-app .
 
       - name: Log in to Docker Hub
-        run: docker login -u alar12 -p Aa12345*#
+        run: docker login -u "Replace with uname" -p "Replace with Pass"
 
       - name: Push Docker image
         run: docker push alar12/my-app
