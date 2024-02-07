@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "eslint": "^8.56.0",
     "esbuild": "^0.20.0"
   },
   "scripts": {
