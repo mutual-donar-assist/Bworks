@@ -37,7 +37,7 @@ jobs:
 
       - name: Run linter
         run: npm run lint
-        working-directory: alar12/my-app
+        working-directory: ./my-app
       
       - name: Run ESLint
         run: npx eslint .
