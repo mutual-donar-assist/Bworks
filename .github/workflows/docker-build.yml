@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - estimation-github-alar12-240131
+      - Adithya
 
 jobs:
   build:
