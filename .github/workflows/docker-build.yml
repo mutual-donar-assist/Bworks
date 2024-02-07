@@ -16,7 +16,8 @@ jobs:
 
       - name: Set up Docker
         run: docker --version
-            - name: Build Docker image
+      
+      - name: Build Docker image
         run: |
           cd crew_manual
           docker build -t vineeth173/my-astro-app .
