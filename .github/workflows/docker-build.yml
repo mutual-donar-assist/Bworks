@@ -1,9 +1,9 @@
-name: Docker Build and Push
-
+name: CI/CD Pipeline
+#Docker
 on:
   push:
     branches:
-      - estimation-github-alar12-240131
+      - Adithya
 
 jobs:
   build:
@@ -31,3 +31,13 @@ jobs:
 
       - name: Push Docker image
         run: docker push alar12/my-app
+
+      - name: Install ESLint globally
+        run: npm install -g eslint
+
+      - name: Run linter
+        run: npm run lint
+        #working-directory: ./work/Bworks/crew_manual
+      
+      - name: Run ESLint
+        run: npx eslint .
