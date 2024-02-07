@@ -1,15 +1,7 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "CommonJS",
     "strict": true
-  },
-  "include": [
-    "src/**/*.ts",
-    ".eslintrc.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
