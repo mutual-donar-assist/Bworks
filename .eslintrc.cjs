@@ -4,6 +4,8 @@ module.exports = {
         "es2021": true
     },
     "extends": [
+        'eslint:recommended',
+        'plugin:react/recommended',
         "standard-with-typescript",
         "plugin:react/recommended"
     ],
@@ -16,13 +18,12 @@ module.exports = {
                 ".eslintrc.{js,cjs}"
             ],
             "parserOptions": {
-                "project": './tsconfig.json',
                 "sourceType": "script"
             }
         }
     ],
     "parserOptions": {
-        "project": './tsconfig.json',
+        project: resolve(__dirname, './tsconfig.json'),
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
