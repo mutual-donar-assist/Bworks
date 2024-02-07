@@ -1,11 +1,7 @@
-# syntax=docker/dockerfile:1
-FROM python:3.10-alpine
-WORKDIR /code
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-RUN apk add --no-cache gcc musl-dev linux-headers
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-EXPOSE 5000
+FROM node:21.6.1
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
-CMD ["flask", "run"]
+EXPOSE 3000
+CMD ["npm", "start"]
