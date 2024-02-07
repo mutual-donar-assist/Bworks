@@ -1,4 +1,22 @@
 {
+  "name": "csci-5030",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev && react-scripts start",
+    "build": "astro check && astro build && react-scripts build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./crew_manual"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "astro": "^4.1.2",
+    "esbuild": "^0.20.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint": "^8.56.0",
@@ -9,4 +27,5 @@
     "eslint-plugin-react": "^7.33.2",
     "typescript": "^5.3.3"
   }
+  
 }
